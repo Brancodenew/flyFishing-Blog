@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tan: #BABBA4;
+    --fontsize: 2rem;
+     
+}
+
+body {
+    height: 150vh;
+    width: 100%;
+    background-color: #4B5653;
+}
+
+header {
+
+}
+
+.navbar {
+    width: 100%;
+    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.navbar li {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar a {
+    justify-content: space-between;
+    color: tan;
+    text-decoration: none;
+}

@@ -167,3 +167,106 @@ header {
     padding-left: 7rem;
 }
 
+.bonefish-pic {
+    background-image: url(bonefish.png);
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box3 {
+    background-color: var(--tan);
+    height: 11rem;
+    width: 500px;
+    transform: translateX(-25%);
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* --- DUSK FISHING CONTAINER 4 -------------------- */
+
+.container4 {
+    display: flex;
+    align-items: center;
+    padding-right: 7rem;
+}
+
+.duskfishing-pic {
+    background-image: url(bg1.png);
+    width: 600px;
+    height: 300px;
+    background-color: center;
+    background-size: cover;
+}
+
+.text-box4 {
+    background-color: var(--tan);
+    height: 11rem;
+    width: 500px;
+    transform: translateX(25%);
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* -- ABOUT US SECTION ------------------ */
+
+.about-us {
+    width: 100vw;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-pic {
+    background-image: url(bg2.png);
+    width: 50%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-textbox {
+    width: 50%;
+    text-align: center;
+    padding: 20px 20px 20px;
+}
+
+.text {
+    width: 300px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+/* -- SUBSCRIBE CONTAINER ---------------- */
+
+.subscribe-container {
+    top:0;
+    width: 80%;
+    margin: auto;
+    height: 20rem;
+    background-color: var(--tan);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.subscribe_text {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    margin-top: 5rem;
+}
+
+.input_email {
+    border: none;
+    background-color: var(--tan);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

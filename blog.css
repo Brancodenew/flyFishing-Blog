@@ -7,30 +7,26 @@
 :root {
     --tan: #BABBA4;
     --fontsize: 2rem;
-    
+     
 }
 
 body {
-    height: 150vh;
+    height: 100%;
     width: 100%;
     background-color: #4B5653;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-
 }
 
 .navbar {
     width: 100%;
-    height: 40px;
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
+.navbar a.active{
+    color: #ff6600;
+}
 .navbar ul {
     display: block;
     display: flex;
@@ -78,6 +74,7 @@ header {
 /*-- START OF QUOTE CONTAINER UNDER HEADER ------------------- */
 
 .quote-container {
+    padding: 10px 10px;
     position: inherit;
     transform: translateY(-50%);
     background-color: var(--tan);
@@ -85,6 +82,7 @@ header {
     margin: auto;
     text-align: center;
     font-size: 1.2rem;
+    box-shadow: 0px 0px 20px 10px rgba(34, 32, 30, 0.975);
 }
 
 /*-- START OF CONTAINERS -------*/
@@ -93,17 +91,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .article-header {
     text-align: center;
-    width: 500px;
-    height: 75px;
+    width: 700px;
     font-size: 2rem;
     padding: 20px;
     margin: auto;
-    border: var(--tan) solid 1px;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: var(--tan) solid 3px;
+    margin-bottom: 2rem;
 }
 
 .article-header h2 {
@@ -112,6 +111,7 @@ header {
     justify-content: center;
     margin: auto;
 }
+/* --- START OF MAIN CONTAINER 1 --------- */
 
 .container1 {
     display: flex;
@@ -135,7 +135,25 @@ header {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: -17px 17px 20px 10px rgb(10, 7, 1);
 }
+
+.text-box1 p {
+    margin-top: 5px;
+}
+
+.read-more1 {
+    margin-top: 40px;
+}
+
+.read-more1 a {
+    text-decoration: none;
+    color: rgb(169, 138, 55);
+}
+
+/* --- END CONTAINER 1 ------------------------------------------------ */
+
+/* --- START CONTAINER 2 ---------- */
 
 .container2 {
     display: flex;
@@ -159,8 +177,25 @@ header {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 17px 17px 20px 10px rgb(10, 7, 1);
 }
 
+.text-box2 p {
+    margin-top: 20px;
+}
+
+.read-more2 {
+    margin-top: 20px;
+}
+
+.read-more2 a {
+    text-decoration: none;
+    color: rgb(169, 138, 55);
+}
+
+/* -- END CONTAINER 2 ------------------------------------------------------------ */
+
+/* --- START CONTAINER 3 ------- */
 .container3 {
     display: flex;
     align-items: center;
@@ -183,10 +218,25 @@ header {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: -17px 17px 20px 10px rgb(10, 7, 1);
 }
 
-/* --- DUSK FISHING CONTAINER 4 -------------------- */
+.text-box3 p {
+    margin-top: 20px;
+}
 
+.read-more3 {
+    margin-top: 20px;
+}
+
+.read-more3 a {
+    text-decoration: none;
+    color: rgb(169, 138, 55);
+}
+
+/* --- END CONTAINER 3 ------------------------------------------------ */
+
+/* --- START CONTAINER 4 ---------- */
 .container4 {
     display: flex;
     align-items: center;
@@ -209,13 +259,29 @@ header {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 17px 17px 20px 10px rgb(10, 7, 1);
 }
+
+.text-box4 p {
+    margin-top: 20px;
+}
+
+.read-more4 {
+    margin-top: 20px;
+}
+
+.read-more4 a {
+    text-decoration: none;
+    color: rgb(169, 138, 55);
+}
+
+/* --- END CONTAINER 4 ------------------------------------------------ */
 
 /* -- ABOUT US SECTION ------------------ */
 
 .about-us {
     width: 100vw;
-    background-color: pink;
+    background-color: rgba(0, 0, 0, 0.403);
     display: flex;
     flex-direction: row;
 }
@@ -231,42 +297,106 @@ header {
 .about-textbox {
     width: 50%;
     text-align: center;
-    padding: 20px 20px 20px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
 }
 
-.text {
-    width: 300px;
-    margin: auto;
-    padding-top: 80px;
+.about-textbox h1 {
+    text-decoration: underline;
+}
+
+.about-textbox p {
+    margin-top: 30px;
 }
 
 /* -- SUBSCRIBE CONTAINER ---------------- */
 
 .subscribe-container {
-    top:0;
     width: 80%;
     margin: auto;
-    height: 20rem;
-    background-color: var(--tan);
+    height: 15rem;
+    background-color: rgba(0, 0, 0, 0.186);
     text-align: center;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.subscribe_text {
+.subscribe-text {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: pink;
-    margin-top: 5rem;
+    
 }
 
-.input_email {
-    border: none;
-    background-color: var(--tan);
-    margin-top: 20px;
-    margin-bottom: 20px;
+.subh1 {
+    font-size: 2.5rem;
 }
+
+.subh3 {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.sub-input {
+    width: 270px;
+    height: 2.5rem;
+    margin-top: 20px;
+    background-color: #4B5653;
+    border: none;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    width: 4rem;
+    height: 30px;
+    margin-top: 20px;
+    border: white solid 2px;
+}
+
+.submit-btn:hover {
+    pointer-events: visible;
+    cursor: pointer;
+    transition: .2s all ease-in;
+}
+
+/* --- END OF SUBSCRIBE CONTAINER ------------------------- */
+
+/* --- START BOTTOM LINKS ------------------ */
+
+.bottom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+.btm-logo {
+    display: flex;
+    flex: start;
+}
+
+.btm-links {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    gap: 3rem;
+    float: right;
+}
+
+.btm-links a {
+    text-align: right;
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+
 
